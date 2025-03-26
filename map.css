@@ -1,0 +1,252 @@
+#map  {
+    height: 800px; 
+    width: 1850px; 
+    position:relative; 
+    background-color: #556170;
+    top: 120px;
+    left: 1.7%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#search {
+    position: absolute ; 
+    right: 6%; 
+    top: 5%; 
+    border-radius: 0px;
+    
+}
+
+#container {
+width: 20px;
+height: 20px;
+}
+
+/* Выбор расположения корпусов */
+#territory-buttons {
+    position: absolute;
+    right: 30%; 
+    top: 5%; 
+    
+}
+
+img {
+width: 700px;
+height: 350px;
+object-fit: contain;
+position: absolute;
+top: -12% ;
+right: 61%;
+
+}
+
+body {
+    background-color: #10161f;
+}
+
+/* Кнопки масштабирования  */
+.leaflet-control-zoom {
+        position: absolute; /* Абсолютное позиционирование контейнера */
+        top: 300px; /* Отступ от верхнего края страницы */
+        left: 10px; /* Отступ от левого края страницы */
+        display: flex;
+        flex-direction: column; /* Расположить кнопки вертикально */
+        align-items: center;
+        background: none; /* Убрать фон */
+        border: none; /* Убрать границу */
+        box-shadow: none; /* Убрать тень */
+        padding: 0; /* Убрать внутренние отступы */
+      }
+.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+    width: 40px; /* Ширина кнопок */
+  height: 40px; /* Высота кнопок */
+  background-color: blue; /* Цвет фона кнопок */
+  color: white; /* Цвет текста кнопок */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0; /* Добавить отступ между кнопками */
+  border-radius: 50%;
+  cursor: pointer; /* Изменить курсор при наведении */
+ 
+}
+.leaflet-control-search { 
+    
+    margin: 10px; }
+    
+    .leaflet-control-custom {
+        background-color: white;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    #search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    #searchBox {
+        width: 300px;
+        padding: 10px;
+        border: none;
+        border-radius: 20px 0 0 20px;
+        font-size: 16px;
+        background-color: #293442;
+        color: #fff;
+        outline: none;
+        padding-left: 40px;
+    }
+    
+    #searchBox::placeholder {
+        color: #888;
+    }
+    
+    #searchIcon {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #888;
+        font-size: 20px;
+    }
+    
+    #search button {
+        padding: 8px 18px;
+        border: none;
+        background-color: #287ab1;
+        color: white;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+    
+    #search button:hover {
+        background-color: #0056b3;
+    }
+    
+    #search button:active {
+        background-color: #4a5c9c;
+    }
+
+
+
+    #territory-buttons .btn {
+        background-color: #287ab1;
+        color: white;
+        border: none;
+        padding: 7px 17px;
+        margin: 6px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        margin-top: 0%;
+    }
+    
+    #territory-buttons .btn:hover {
+        background-color: #0056b3;
+    }
+    
+    #territory-buttons .btn:active {
+        background-color: #004080;
+    }
+
+
+   
+
+    /* map.css */
+.leaflet-control-custom {
+    background-color: #007bff; /* Голубой цвет */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 50%; /* Круглая форма */
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center; /* Центрирование текста */
+    width: 40px; /* Ширина кнопки */
+    height: 40px; /* Высота кнопки */
+    line-height: 20px; /* Выравнивание текста по центру */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.leaflet-control-custom:hover {
+    background-color: #0056b3;
+}
+
+.leaflet-control-custom:active {
+    background-color: #004080;
+}
+
+@media (max-width: 768px) {
+    #map  {
+        height: 750px; 
+        width: 416px; 
+        position:relative; 
+        background-color: rgba(200, 217, 241, 0.76);
+        top: 120px;
+        left: 1.7%;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    #territory-buttons {
+        width: 77%;
+        right: 0;
+        top: 865px;
+        transform: none;
+        
+    }
+
+    #search {
+        width: 100%;
+        right: 2%;
+        top: 68px;
+        
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+        top: 1%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .leaflet-control-zoom {
+        top: 300px;
+        left: 10px;
+    }
+    .leaflet-control-zoom-in, .leaflet-control-zoom-out {
+        width: 30px; 
+        height: 30px; 
+    }
+    .leaflet-control-custom {
+        top: 0px;
+        left: 2px;
+        width: 50%;
+    }
+    .btn {
+      left: -70px;
+      top: 15px;
+    }
+    
+    
+}
+
+
+
+ 
+
+    

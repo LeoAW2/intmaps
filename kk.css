@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     background-color: #10161f;
+    
+}
+
+.login-container {
+    background-color: #293442;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 280px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #556170;;
+    border: none;
+}
+
+button {
+    padding: 8px 18px;
+    border: none;
+    background-color: #287ab1;
+    color: white;
+    border-radius: 20px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin: 7px 1px; /* Добавить отступ между кнопками */
+    
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #4a5c9c;
+}
+img {
+    width: 700px;
+    height: 350px;
+    object-fit: contain;
+    position: absolute;
+    top: -12% ;
+    right: 61%;
+    
+    }
+
+.jj {
+    position: absolute;
+    right: 1113px;
+}
+.jjk {
+    position: absolute;
+    
+    right: 878px;
+}
+.lenchik {
+    position: absolute;
+    
+    right: 723px;
+}
+
+
